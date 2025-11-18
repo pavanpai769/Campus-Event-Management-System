@@ -1,0 +1,83 @@
+.cardContainer{
+    flex: 1;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+.card{
+    margin-top: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0 0 #c60101;
+    padding: 30px 40px 30px 30px;
+}
+
+.buttonContainer{
+    margin-top: auto;
+    margin-left: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.button{
+    margin-right: 20px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+#approve{
+    background: #02ae02;
+}
+
+#delete{
+    background: #c60101;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.desc{
+    color: #737373;
+    margin-top: 10px;
+}
+
+.mail{
+    color: #737373;
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.details{
+    margin-top: 20px;
+    display: flex;
+    gap: 20%;
+
+    align-items: center;
+}
+
+.venue{
+    display: flex;
+    align-items: center;
+}
+
+.host{
+    color: #737373;
+    font-size: 14px;
+    margin-top: 20px;
+}

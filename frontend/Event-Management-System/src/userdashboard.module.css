@@ -1,0 +1,94 @@
+
+.subheading{
+    margin-top:10px;
+    font-size: 16px;
+    color: #737373;
+}
+
+.statisticContainer{
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+}
+
+.txtBtnContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.createBtn{
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    background: #9a0101;
+}
+
+.statisticCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:45px;
+    border: 2px solid #E5E5E5;
+    box-shadow: #e3e3e3 3px 3px 3px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px 0 20px 25px;
+}
+
+.stHeading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #737373;
+}
+
+.tabs{
+    border: none;
+    padding: 7px 20px 7px 20px;
+    font-size: 14px;
+    min-width: 150px;
+    background: none;
+    font-weight: 600;
+}
+
+.activeTab{
+    background: white;
+    border-radius: 10px;
+}
+
+.stLogo{
+    color: #9a0101;
+    height: 16px;
+    width: 16px;
+}
+
+.tabsContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: #E5E5E5;
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+}
+
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    row-gap: 30px;
+    column-gap: 67px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.dataDescription{
+    font-size: 14px;
+    color: #737373;
+    margin-top: 10px;
+}

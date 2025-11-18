@@ -1,0 +1,38 @@
+.data-table-container {
+    width: 100%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.data-table th,
+.data-table td {
+    border-top:1px solid #EFEFEF;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table td{
+    padding: 15px 10px 15px 10px;
+}
+
+.data-table th {
+    background-color: #e5e5e5;
+    font-weight: 600;
+}
+
+.data-table tr {
+    background-color: #f3f2f2;
+    margin-top: 0;
+}
+
+.data-table tr:hover{
+    background: #f7fdf3;
+}

@@ -1,0 +1,44 @@
+.popupOverlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.67);
+
+}
+
+.popup{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 40px ;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+}
+
+.btn{
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 7px;
+}
+
+#unregister{
+    background: #9a0101;
+}
