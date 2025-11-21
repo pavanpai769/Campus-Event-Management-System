@@ -31,10 +31,19 @@ public class AuthController {
     @GetMapping("/checkAuth")
     public ResponseEntity<Map<String,String>> checkAuth(Authentication auth) {
         if (auth != null && auth.isAuthenticated()) {
+
             boolean isAdmin = auth.getAuthorities().stream()
                     .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
 
+            boolean isUser = auth.getAuthorities().stream()
+                    .anyMatch(a -> a.getAuthority().equals("ROLE_USER"));
+
+            if(! isAdmin && ! isUser) {
+                return  ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+            }
+
             String role = isAdmin ? "admin" : "user";
+
             return ResponseEntity.status(HttpStatus.OK).body(Map.of("role", role));
         }
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();

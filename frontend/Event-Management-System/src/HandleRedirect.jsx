@@ -1,7 +1,7 @@
 import {useLocation, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 
-export default function HandleRedirect({element}){
+export default function HandleRedirect(){
     const [loading,setLoading] = useState(true);
     const navigate = useNavigate();
     const location = useLocation();
@@ -26,5 +26,5 @@ export default function HandleRedirect({element}){
                 setLoading(false);
             })
     }, [location.pathname]);
-    return loading ? <p>Loading....</p> : element;
+    return loading ? <p>Loading....</p> : <></>
 }
